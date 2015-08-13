@@ -29,17 +29,12 @@ public class Listener extends JavaBaseListener {
 	@Override
 	public void enterClassDeclaration(JavaParser.ClassDeclarationContext ctx) {
 		setClazzName(ctx.Identifier().toString());
-		System.out.println("enterClassDeclaration, name=[" + getClazzName()
-				+ "]");
 	}
 
 	/** Listen to matches of methodDeclaration */
 	@Override
 	public void enterMethodDeclaration(JavaParser.MethodDeclarationContext ctx) {
 		methodCount++;
-		System.out.println("enterMethodDeclaration, name=["
-				+ ctx.Identifier().toString() + "], new methodCount=["
-				+ methodCount + "]");
 	}
 
 	public String getClazzName() {
