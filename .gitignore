@@ -2,3 +2,5 @@
 /antlr4-java-example/.settings/org.eclipse.core.resources.prefs
 /antlr4-java-example/.settings/org.eclipse.jdt.core.prefs
 /antlr4-java-example/.settings/org.eclipse.m2e.core.prefs
+/target/
+/bin/
